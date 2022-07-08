@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SuiteSession1">
+
+	<test thread-count="5" name="TestSession1">
+		<parameter name="email" value="devang@yopmail.com" />
+		<parameter name="password" value="P@ssw0rd" />
+		<classes>
+			<class name="training_Nidhi.NewTestPractice1" />
+		</classes>
+	</test>
+</suite> 

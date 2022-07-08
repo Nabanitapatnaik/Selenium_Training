@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Examples">
+	<test thread-count="5" name="TestExample1">
+		<classes>
+			<class name="testNG.Demo1" />
+			<class name="testNG.Demo2" />
+		</classes>
+	</test>
+	<test name="CarLoan">
+		<classes>
+			<class name="testNG.Demo3">
+				<methods>
+					<exclude name="mobile.*"></exclude>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="HomeLoan">
+		<classes>
+			<class name="testNG.Demo4">
+				<methods>
+					<include name="loginApIHomeLoan">
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite> 

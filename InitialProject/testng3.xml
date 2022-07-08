@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Examples">
+<parameter name = "URL" value="http://ec2-44-230-141-105.us-west-2.compute.amazonaws.com/myportal/">
+</parameter>
+
+	<test thread-count="5" name="Regression">
+	<groups>
+	<run>
+	<include name = "smoke">
+	</include>
+	</run>
+	</groups>
+	<classes>
+	<class name ="testNG.Demo1"/>
+	<class name ="testNG.Demo2"/>
+	<class name ="testNG.Demo3"/>
+	<class name ="testNG.Demo4"/>
+	
+	
+	</classes>
+	</test>
+</suite> 
